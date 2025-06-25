@@ -19,7 +19,7 @@ const GoodsDetail = () => {
     //요청URL : http://localhost:3000/goods_list/상품id
 
     const getGoods = async () => {
-        const URL = `http://localhost:8088/lunch/api/goods_list/${id}`;
+        const URL = `http://54.180.143.66:8088/lunch/api/goods_list/${id}`;
         const res = await axios.get(URL);
         const data = res.data;
         console.log(data);

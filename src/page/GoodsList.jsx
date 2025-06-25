@@ -9,7 +9,7 @@ const GoodsList = () => {
     const [goods, setGoods] = useState();
 
     const getGoodsList = async () => {
-        const GOODS_URL = "http://localhost:8088/lunch/api/goods_list";
+        const GOODS_URL = "http://54.180.143.66:8088/lunch/api/goods_list";
         const res = await axios.get(GOODS_URL);
         const data = res.data;
         console.log(data);
